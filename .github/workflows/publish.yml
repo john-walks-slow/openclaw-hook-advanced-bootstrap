@@ -5,11 +5,6 @@ on:
     tags:
       - 'v*'
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'Version bump type (patch/minor/major) or specific version'
-        required: false
-        default: 'patch'
 
 jobs:
   publish:
@@ -32,14 +27,6 @@ jobs:
 
       - name: Build
         run: npm run build
-
-      - name: Version bump (if manual trigger)
-        if: github.event_name == 'workflow_dispatch'
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          npm version ${{ github.event.inputs.version }} -m "chore: release v%s"
-          git push --follow-tags
 
       - name: Publish
         run: npm publish --provenance

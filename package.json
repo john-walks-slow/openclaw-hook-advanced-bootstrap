@@ -1,7 +1,7 @@
 {
-  "name": "advanced-bootstrap",
+  "name": "openclaw-hook-advanced-bootstrap",
   "version": "1.0.0",
-  "description": "Configurable bootstrap content injection with per-agent filtering",
+  "description": "OpenClaw hook: configurable bootstrap content injection with per-agent filtering",
   "main": "handler.js",
   "scripts": {
     "build": "tsc handler.ts --outDir . --module commonjs --target ES2020 --esModuleInterop --skipLibCheck"
@@ -16,6 +16,10 @@
   "engines": {
     "node": ">=18"
   },
-  "keywords": ["openclaw", "hook", "bootstrap"],
-  "license": "MIT"
+  "keywords": ["openclaw", "openclaw-hook", "bootstrap"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-walks-slow/openclaw-hook-advanced-bootstrap.git"
+  }
 }

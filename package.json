@@ -1,0 +1,21 @@
+{
+  "name": "advanced-bootstrap",
+  "version": "1.0.0",
+  "description": "Configurable bootstrap content injection with per-agent filtering",
+  "main": "handler.js",
+  "scripts": {
+    "build": "tsc handler.ts --outDir . --module commonjs --target ES2020 --esModuleInterop --skipLibCheck"
+  },
+  "dependencies": {
+    "glob": "^11.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.9.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": ["openclaw", "hook", "bootstrap"],
+  "license": "MIT"
+}

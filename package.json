@@ -1,5 +1,5 @@
 {
-  "name": "openclaw-hook-advanced-bootstrap",
+  "name": "@johnnren/openclaw-hook-advanced-bootstrap",
   "version": "1.0.0",
   "description": "OpenClaw hook: configurable bootstrap content injection with per-agent filtering",
   "main": "handler.js",
@@ -18,8 +18,16 @@
   },
   "keywords": ["openclaw", "openclaw-hook", "bootstrap"],
   "license": "MIT",
+  "author": "johnnren",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/john-walks-slow/openclaw-hook-advanced-bootstrap.git"
+  },
+  "bugs": {
+    "url": "https://github.com/john-walks-slow/openclaw-hook-advanced-bootstrap/issues"
+  },
+  "homepage": "https://github.com/john-walks-slow/openclaw-hook-advanced-bootstrap#readme",
+  "publishConfig": {
+    "access": "public"
   }
 }
